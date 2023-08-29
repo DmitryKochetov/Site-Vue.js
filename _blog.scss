@@ -1,0 +1,116 @@
+@import "buttons";
+@import "extender";
+
+.articlesTopSet {
+  height: 340px;
+  width: 100vw;
+  background: no-repeat url("images/articlesTopSetPhoto.jpg");
+  background-size: cover;
+  position: relative;
+  &__label {
+    position: absolute;
+    top: 155px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    width: 500px;
+    padding: 41px 78px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 37px 37px 0px 0px;
+    background: #fff;
+  }
+  &__heading {
+    color: #292f36;
+    @extend .standartDMText;
+    font-size: 50px;
+    line-height: 125%;
+  }
+  &__text {
+    color: #4d5053;
+    @extend .standartJostText;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.22px;
+  }
+}
+
+.latestPostHeading {
+  margin-top: 150px;
+  margin-bottom: 27px;
+  color: #292f36;
+  @extend .standartDMText;
+  font-size: 50px;
+  line-height: 125%;
+  letter-spacing: 1px;
+}
+
+.latestPostSet {
+  border-radius: 62px;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+  display: flex;
+  max-width: 100%;
+  padding: 22px;
+  align-items: center;
+  gap: 10px;
+  &__pic {
+    border-radius: 62px;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    max-width: 469px;
+    margin: 0 auto;
+  }
+  &__down {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__heading {
+    color: #292f36;
+    @extend .standartDMText;
+    font-size: 25px;
+    line-height: 125%;
+    letter-spacing: 0.5px;
+  }
+  &__text {
+    color: #4d5053;
+    @extend .standartJostText;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.22px;
+    margin-top: 22px;
+    margin-bottom: 41px;
+  }
+  &__date {
+    color: #4d5053;
+    font-size: 16px;
+    @extend .standartJostText;
+    line-height: 150%;
+    letter-spacing: 0.16px;
+    text-transform: capitalize;
+  }
+}
+
+.paginationBar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  max-width: 270px;
+  margin: 100px auto  200px auto;
+
+  &__element{
+    position: relative;
+  }
+  &__number{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
